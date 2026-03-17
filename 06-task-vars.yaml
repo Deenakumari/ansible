@@ -7,7 +7,8 @@
     duration: 120 hrs
   tasks:
     - name: print the course information
-      course: devops
+      vars:
+       course: devops
       ansible.builtin.debug:
        msg: 'hello {{ course }}, name is: {{ name }}, duration is {{ duration }}' 
       
