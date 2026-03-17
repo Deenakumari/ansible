@@ -1,0 +1,11 @@
+- name: ansible loops
+  hosts: frontend
+  tasks:
+    - name: install ansbile packages
+      ansible.builtin.packages:
+        name: {{ item }}
+        state: installed
+      loop:
+      - mysql
+      - zip
+      - nginx

@@ -1,0 +1,49 @@
+- name: ansbile functions
+  hosts: local
+  connections: local
+  vars:
+    names: "deena, kumari, madhumanchi"
+  tasks:
+    - name: check undefined variables
+      ansbile.builtin.debug:
+       msg: " hello, {{ names | default('deena') }}"
+
+    - name: print names
+      ansbile.builtin.debug:
+        msg: " hello {{ names | spilt(','') }}"   
+
+    - name: convert map into list
+      vars: 
+        course:
+          duration: 120hrs
+          course: devops
+          trainer: siva
+      ansible.builtin.debug:
+        msg: " hello {{ course | dict2items }}"
+
+    - name: convert list into dict2items
+      vars:
+        course:
+          - "{ 'key' : 'name', 'value': 'siva' }"
+          - "{ 'key' : 'course', 'value': 'devops' }"
+          - "{ 'key' : 'duration', 'value': '120hrs' }"
+        ansbile.builtin.debug:
+         msg: " hello {{ course | items2dict }}"
+
+    - name: convert to uppercase
+      vars:
+        name: deena madhumanchi
+      ansbile.builtin.debug:
+        msg: " hello, {{ name | upper }}"
+ 
+    - name: convert to lowercase
+      vars:
+        name: deena madhumanchi
+      ansbile.builtin.debug:
+        msg: " hello, {{ name | lower }}"
+
+    - name: check ip valid or not
+      vars: 
+        ip: 132.78.90.1
+      ansbile.builtin.debug:
+        msg: " hello, {{ ip | ansbile.utils.ipaddr}}"

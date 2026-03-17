@@ -1,0 +1,18 @@
+- name: ansible data types
+  tasks: local
+  connections: local
+  vars:
+    duration: 120 hrs
+    course: devops
+    is_live: true
+    tools:
+      - cicd
+      - linux
+      - shell
+    concepts:
+      ci: jemkins
+      script: shell,ansible,terraform
+  tasks:
+    - name: print the course info
+      ansible.builtin.debug:
+      msg: ' the course durstion is "{{ durstion }}", course is: "{{ course }}", is_live? "{{ is_live }}", tools are: "{{ tools }}", concepts are: "{{ concepts }}" '
