@@ -1,6 +1,6 @@
 - name: PLAY1
   hosts: local
-  connection: local
+  connection: local #means not asking username and password
   tasks:
      - name: play with task1
        ansible.builtin.debug:
