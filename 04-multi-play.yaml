@@ -4,11 +4,11 @@
   tasks:
      - name: play with task1
        ansible.builtin.debug:
-       msg: " print the play1 with task1"
+        msg: " print the play1 with task1"
 
      - name: play with task2
        ansible.builtin.debug:
-       msg: " print the play1 with task2"  
+        msg: " print the play1 with task2"  
 
 
 - name: PLAY2
@@ -17,8 +17,8 @@
   tasks:
      - name: play with task1
        ansible.builtin.debug:
-       msg: " print the play2 with task1"
+        msg: " print the play2 with task1"
 
      - name: play with task2
        ansible.builtin.debug:
-       msg: " print the play2 with task2"        
+        msg: " print the play2 with task2"        

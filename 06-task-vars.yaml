@@ -2,17 +2,16 @@
   hosts: local
   connections: local
   vars:
-    course: devops
+    course: devops with aws
     name: siva
     duration: 120 hrs
   tasks:
     - name: print the course information
       course: devops
       ansible.builtin.debug:
-      msg: 'hello {{ course }}, name is: {{ name }}, duration is {{ duration }}' 
+       msg: 'hello {{ course }}, name is: {{ name }}, duration is {{ duration }}' 
       
 
     - name: print the course information
-      course: devops
       ansible.builtin.debug:
-      msg: 'hello {{ course }}, name is: {{ name }}, duration is {{ duration }}'   
+       msg: 'hello {{ course }}, name is: {{ name }}, duration is {{ duration }}'   
