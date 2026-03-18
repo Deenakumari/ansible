@@ -1,5 +1,5 @@
 - name: ansible data types
-  tasks: local
+  hosts: local
   connection: local
   vars:
     duration: 120 hrs
