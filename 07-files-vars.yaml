@@ -5,12 +5,11 @@
    - course.yaml
   tasks:
      - name: print the course information
-       course: devops
+       course: aws
        ansible.builtin.debug:
         msg: 'hello {{ course }}, name is: {{ name }}, duration is {{ duration }}' 
       
 
      - name: print the course information
-       course: devops
        ansible.builtin.debug:
         msg: 'hello {{ course }}, name is: {{ name }}, duration is {{ duration }}'   
