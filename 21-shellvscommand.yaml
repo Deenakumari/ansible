@@ -8,7 +8,7 @@
 
     - name: print the command outcome
       ansible.builtin.debug:
-      msg: "{{ command_result }}" 
+       msg: "{{ command_result }}" 
 
     - name: redirect ls output to the shell
       # ansbile.builtin.command: " ls -ltr > /tmp/output.txt"
@@ -17,5 +17,5 @@
 
     - name: print output 
       ansibile.builtin.debug:
-      msg: "{{ command_output }}"
+       msg: "{{ command_output }}"
       
