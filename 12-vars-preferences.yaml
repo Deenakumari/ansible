@@ -1,6 +1,6 @@
 - name: undestand variable preferences
   hosts: local
-  connections: local
+  connection: local
   vars:
     greeting: "hello from play"
   vars_files:
