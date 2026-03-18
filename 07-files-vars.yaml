@@ -8,9 +8,9 @@
        vars:
         course: aws
        ansible.builtin.debug:
-        msg: 'hello {{ course }}, name is: {{ name }}, duration is {{ duration }}' 
+        msg: 'hello {{ course }}, name is: {{ trainer }}, duration is {{ duration }}' 
       
 
      - name: print the course information
        ansible.builtin.debug:
-        msg: 'hello {{ course }}, name is: {{ name }}, duration is {{ duration }}'   
+        msg: 'hello {{ course }}, name is: {{ trainer }}, duration is {{ duration }}'   
