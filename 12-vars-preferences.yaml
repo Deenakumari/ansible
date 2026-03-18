@@ -5,10 +5,10 @@
     greeting: "hello from play"
   vars_files:
   - course.yaml
-  vars_prompt:
-     name: greeting
-     prompt: "enter the greeting"
-     private: false
+  # vars_prompt:
+  #    name: greeting
+  #    prompt: "enter the greeting"
+  #    private: false
   tasks:
     - name: print the variable preferences
       # vars:
