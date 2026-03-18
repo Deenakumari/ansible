@@ -1,6 +1,6 @@
 - name: ansbile functions
   hosts: local
-  connections: local
+  connection: local
   vars:
     names: "deena, kumari, madhumanchi"
   tasks:
