@@ -13,4 +13,4 @@
     - name: print the given number is greterthan or equal to 100
       ansible.builtin.debug:
        msg: "the given number is: {{ number }} is greterthan or equl to 100"
-      when: number >= 100
+      when: number > 100
