@@ -27,23 +27,23 @@
           - "{ 'key' : 'name', 'value': 'siva' }"
           - "{ 'key' : 'course', 'value': 'devops' }"
           - "{ 'key' : 'duration', 'value': '120hrs' }"
-        ansbile.builtin.debug:
+        ansibile.builtin.debug:
          msg: "hello {{ course | items2dict }}"
 
     - name: convert to uppercase
       vars:
         name: deena madhumanchi
-      ansbile.builtin.debug:
+      ansibile.builtin.debug:
         msg: "hello, {{ name | upper }}"
  
     - name: convert to lowercase
       vars:
         name: deena madhumanchi
-      ansbile.builtin.debug:
+      ansibile.builtin.debug:
         msg: "hello, {{ name | lower }}"
 
     - name: check ip valid or not
       vars: 
         ip: 132.78.90.1
-      ansbile.builtin.debug:
+      ansibile.builtin.debug:
         msg: "hello, {{ ip | ansbile.utils.ipaddr}}"
