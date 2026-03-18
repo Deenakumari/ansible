@@ -1,5 +1,5 @@
 - name: play level with variables
-  hosts: local
+  host: local
   connection: local
   vars:
     course: devops with aws
