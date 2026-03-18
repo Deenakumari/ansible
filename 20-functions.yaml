@@ -5,11 +5,11 @@
     names: "deena, kumari, madhumanchi"
   tasks:
     - name: check undefined variables
-      ansbile.builtin.debug:
+      ansibile.builtin.debug:
        msg: "hello, {{ names | default('deena') }}"
 
     - name: print names
-      ansbile.builtin.debug:
+      ansibile.builtin.debug:
         msg: "hello {{ names | spilt(','') }}"   
 
     - name: convert map into list
