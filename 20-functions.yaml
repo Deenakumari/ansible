@@ -10,7 +10,7 @@
 
     - name: print names
       ansible.builtin.debug:
-        msg: "hello {{ names | spilt(','') }}"   
+        msg: "hello {{ names | spilt(',') }}"   
 
     - name: convert map into list
       vars: 
@@ -46,4 +46,4 @@
       vars: 
         ip: 132.78.90.1
       ansible.builtin.debug:
-        msg: "hello, {{ ip | ansbile.utils.ipaddr}}"
+        msg: "hello, {{ ip | ansble.utils.ipaddr}}"
