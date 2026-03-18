@@ -3,7 +3,7 @@
   tasks:
     - name: install ansbile packages
       ansible.builtin.packages:
-        name: {{ item }}
+        name: "{{ item }}"
         state: installed
       loop:
       - mysql
