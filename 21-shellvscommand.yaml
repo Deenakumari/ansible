@@ -2,7 +2,7 @@
   hosts: frontend
   tasks:
     - name: redirect the ls output
-      ansble.builtin.command: "ls -ltr > /tmp/output.txt"
+      ansible.builtin.command: "ls -ltr > /tmp/output.txt"
       # ansbile.builtin.shell: "ls -ltr > /tmp/output.txt"
       register: command_result
 
@@ -12,10 +12,10 @@
 
     - name: redirect ls output to the shell
       # ansbile.builtin.command: " ls -ltr > /tmp/output.txt"
-      ansbile.builtin.shell: "ls -ltr > /tmp/output.txt"
+      ansibile.builtin.shell: "ls -ltr > /tmp/output.txt"
       register: command_output
 
     - name: print output 
-      ansbile.builtin.debug:
+      ansibile.builtin.debug:
       msg: "{{ command_output }}"
       
